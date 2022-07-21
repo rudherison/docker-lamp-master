@@ -2,12 +2,12 @@ version: "2"
 
 services:
 
-  web1804-php7:
+  web1804-php5:
     build:
       context: .
       dockerfile: ./1804/Dockerfile
       args:
-        - PHP_VERSION=7.4
+        - PHP_VERSION=5.3
     environment:
       - MYSQL_ADMIN_PASS=password
     ports:
@@ -16,12 +16,12 @@ services:
     tmpfs:
       - /var/lib/mysql
 
-  web1804-php8:
+  web1804-php5:
     build:
       context: .
       dockerfile: ./1804/Dockerfile
       args:
-        - PHP_VERSION=8.0
+        - PHP_VERSION=5.3
     environment:
       - MYSQL_ADMIN_PASS=password
     ports:
@@ -30,12 +30,12 @@ services:
     tmpfs:
       - /var/lib/mysql
 
-  web2004-php7:
+  web2004-php5:
     build:
       context: .
       dockerfile: ./2004/Dockerfile
       args:
-        - PHP_VERSION=7.4
+        - PHP_VERSION=5.3
     environment:
       - MYSQL_ADMIN_PASS=password
     ports:
@@ -44,12 +44,12 @@ services:
     tmpfs:
       - /var/lib/mysql
 
-  web2004-php8:
+  web2004-php5:
     build:
       context: .
       dockerfile: ./2004/Dockerfile
       args:
-        - PHP_VERSION=8.0
+        - PHP_VERSION=5.3
     environment:
       - MYSQL_ADMIN_PASS=password
     ports:
