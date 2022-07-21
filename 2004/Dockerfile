@@ -1,4 +1,4 @@
-FROM phusion/mpasternacki/ubuntu-lucid-i386
+FROM mpasternacki/ubuntu-lucid-i386
 MAINTAINER Matthew Rayner <hello@rayner.io>
 ENV REFRESHED_AT 2021-09-07
 
