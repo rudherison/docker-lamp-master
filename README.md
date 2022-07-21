@@ -194,7 +194,7 @@ ldi 3000 3306
 ### Building and running
 ```bash
 # Clone the project from Github
-git clone https://github.com/mattrayner/docker-lamp.git
+git clone https://github.com/rudherison/docker-lamp-master.git
 cd docker-lamp
 
 # Build the images
