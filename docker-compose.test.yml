@@ -16,7 +16,7 @@ services:
     tmpfs:
       - /var/lib/mysql
 
-  web1804-php5.1:
+  web1804-php5-1:
     build:
       context: .
       dockerfile: ./1804/Dockerfile
@@ -44,7 +44,7 @@ services:
     tmpfs:
       - /var/lib/mysql
 
-  web2004-php5.1:
+  web2004-php5-1:
     build:
       context: .
       dockerfile: ./2004/Dockerfile
