@@ -1,10 +1,6 @@
-FROM phusion/baseimage:0.11
+FROM mpasternacki/ubuntu-lucid-i386
 MAINTAINER Matthew Rayner <hello@rayner.io>
 ENV REFRESHED_AT 2021-09-08
-
-# based on dgraziotin/lamp
-# MAINTAINER Daniel Graziotin <daniel@ineed.coffee>
-# updated for PHP 8.0 Ferdinand Kasper <fkasper@modus-operandi.at>
 
 ENV DOCKER_USER_ID 501 
 ENV DOCKER_USER_GID 20
@@ -12,8 +8,8 @@ ENV DOCKER_USER_GID 20
 ENV BOOT2DOCKER_ID 1000
 ENV BOOT2DOCKER_GID 50
 
-ENV PHPMYADMIN_VERSION=5.1.1
-ENV SUPERVISOR_VERSION=4.2.2
+ENV PHPMYADMIN_VERSION=4.3.3
+ENV SUPERVISOR_VERSION=5.3.2
 
 ARG PHP_VERSION
 ENV PHP_VERSION=$PHP_VERSION
